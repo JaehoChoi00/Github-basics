@@ -1,6 +1,44 @@
 # for comments
 
-# test of whether or not we can ignore the root directory
-Github basics/*
+# ignore all files with the extensions
+*.pdf
+
+# to ignore the nested directory but target the parent's files.
+# gitignore_test/*.txt will ignore all txt files within the gitignore_test.
+# It will not ignore the nested directories in it.
+
+# gitignore will not ignore files that have already been created prior to gitignore.
+# To fix this, run these terminal commands:
+# git rm --cached <file>  <- Untracks a single file
+# git rm -r --cached .  <- Untracks everything, then re-applies .gitignore
 
 
+# Below are the standard to include by default:
+
+# Never commit Environment and Security
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Operating System System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Package Manager & Build Directories
+node_modules/
+vendor/
+.cache/
+dist/
+build/
+out/
+
+# Server logs
+*.log
+
+# IDEs and Editors
+.vscode/*
+!.vscode/extensions.json
