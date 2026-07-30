@@ -13,3 +13,7 @@ This is a dedicated repository for experimenting with Git features, Markdown, an
 <br>
 
 ---
+
+:arrow_right: [Go to markdown intuition](/markdown-basics/MarkdownExperiment.md)  
+
+:arrow_right: [Go to markdown intuition Extended](/markdown-basics/MarkdownExtended.md)
