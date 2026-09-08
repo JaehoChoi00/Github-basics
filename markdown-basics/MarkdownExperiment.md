@@ -2,7 +2,10 @@
 
 <img src="Markdown.png" width = 150 height = 100 style="filter: brightness(0) invert(1);">  
 
-[:arrow_left: Return to Main README](../README.md)
+[:arrow_left: Return to Main README](../README.md)  
+
+[:arrow_right: move to Markdown Extended README](/markdown-basics/MarkdownExtended.md)  
+[:arrow_right: move to Markdown Abyssal README](/markdown-basics/MarkdownAbyssal.md)
 
 > ***This is a refactored version from the `ipynb` file. With a more intuitive interface.***
 

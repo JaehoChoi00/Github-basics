@@ -2,7 +2,10 @@
 
 <img src="Markdown.png" width = 150 height = 100 style="filter: brightness(0) invert(1);">  
 
-[:arrow_left: Return to Main README](../README.md)
+[:arrow_left: Return to Main README](../README.md)  
+
+[:arrow_left: Return to Markdown Experiment README](/markdown-basics/MarkdownExperiment.md)  
+[:arrow_right: move to Markdown Abyssal README](/markdown-basics/MarkdownAbyssal.md)
 
 > ***This is a refactored version from the `ipynb` file. With a more intuitive interface.***
 
@@ -18,7 +21,7 @@
 > * [`Footnotes`](#footnotes)
 > * [`Task Lists`](#task-lists)
 > * [`Emoji`](#emoji)
-
+> * [`Decorative Characters`](#decorative-characters)
 
 ## [Tables](#sections)
 
@@ -332,6 +335,38 @@ Random sentence [^footnote] filler sentence.[^bignote]
 > 
 > <br>
 
+---
+
+## [Decorative Characters](#sections)
+
+```txt
+├──  └──  │  ──  ┌  ┐  └  ┘  ┬  ┴  ┼
+
+├ ┤ ┌ ┐ └ ┘ ┬ ┴ ┼ ─ │ 
+
+╞ ╡ ╟ ╢ ╤ ╧ ╦ ╩ ╪ ╫ ╬ ═ ║ ╔ ╗ ╚ ╝ 
+
+┍ ┑ ┕  ┎ ┒ ┖ ┚ ┠ ┨ ┯ ┷ ┿ ┝ ┥ ┰ ┸ ╂ 
+
+┱ ┲ ┳ ┴ ┵ ┶ ┷ ┸ ┹ ┺ ┻ ┼ ┽ ┾ 
+
+━ ┃ ┏ ┓ ┗ ┛ ┣ ┫ ┳ ┻ ╋ 
+
+╓ ╖ ╙ ╜ ╒ ╕ ╘ ╛ 
+
+┄ ┆  ┈ ┊ 
+
+╼ ╽ ╾ ╿ 
+
+╌ ╎ ╍ ╏  
+
+═ ║ ╒ ╓ ╔ ╕ ╖ ╗ ╘ ╙ ╚ ╛ ╜ ╝ ╞ ╟ ╠ ╡ ╢ ╣ ╤ ╥ ╦ ╧ ╨ ╩ ╪ ╫ ╬ 
+
+╭ ╮ ╯ ╰ ╱ ╲ ╳ 
+
+╴ ╵ ╶ ╷ ╸ ╹ ╺ ╻ ╼ ╽ ╾ ╿
+```
+
 
 [^footnote]: This is the first footnote.
 
@@ -342,3 +377,5 @@ Random sentence [^footnote] filler sentence.[^bignote]
     `{ code }`
 
     More sentences
+
+

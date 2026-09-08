@@ -1,44 +1,35 @@
-# for comments
-
-# ignore all files with the extensions
+# Ignore documentation exports
 *.pdf
 
-# to ignore the nested directory but target the parent's files.
-# gitignore_test/*.txt will ignore all txt files within the gitignore_test.
-# It will not ignore the nested directories in it.
+# gitignore does not affect files already being tracked.
+# Remove them from the Git index first:
+# git rm --cached <file>
+# git rm -r --cached .
 
-# gitignore will not ignore files that have already been created prior to gitignore.
-# To fix this, run these terminal commands:
-# git rm --cached <file>  <- Untracks a single file
-# git rm -r --cached .  <- Untracks everything, then re-applies .gitignore
-
-
-# Below are the standard to include by default:
-
-# Never commit Environment and Security
+# Never commit secrets
 .env
 .env.local
 .env.*.local
 *.pem
 *.key
 
-# Operating System System Files
+# Operating system files
 .DS_Store
 Thumbs.db
 desktop.ini
 $RECYCLE.BIN/
 
-# Package Manager & Build Directories
-node_modules/
-vendor/
-.cache/
-dist/
+# Common build directories
 build/
+dist/
 out/
+.cache/
+vendor/
+node_modules/
 
-# Server logs
+# Logs
 *.log
 
-# IDEs and Editors
+# VS Code
 .vscode/*
 !.vscode/extensions.json
