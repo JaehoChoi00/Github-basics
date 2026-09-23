@@ -32,7 +32,7 @@
 
 ---
 
-## The Workflow
+### [The Workflow](#sections)
 
 Git tracks **snapshots of a project**.
 
@@ -41,8 +41,9 @@ Git tracks **snapshots of a project**.
 * **Local Repository**: Where Git permanently saves your project history.
 * **Remote Repository**: The shared version of the project hosted on platforms like GitHub or GitLab.
 
+---
 
-## The Basic Cycle
+#### [The Basic Cycle](#the-workflow)
 
 ```txt
 Modify
@@ -63,11 +64,14 @@ Local Repository
 Remote Repository
 ```
 
-<br>
+---
 
-## Repository
+### [Repository](#sections)
 
-### Initialize Repository
+> * [Intitialize Repository](#initialize-repository)
+> * [Clone Repository](#clone-repository)
+
+#### [Initialize Repository](#repository)
 
 ***Syntax:***
 ```bash
@@ -76,9 +80,7 @@ git init
 ***Result:***
 > Initialized empty Git repository in /path/to/project/.git/
 
-<br>
-
-### Clone Repository
+#### [Clone Repository](#repository)
 
 ***Syntax:***
 ```bash
@@ -91,7 +93,7 @@ git clone https://github.com/JaehoChoi00/Github-basics.git
 
 ---
 
-## Commits
+### [Commits](#sections)
 
 ***Syntax:***
 ```bash
@@ -124,7 +126,7 @@ git commit -m "feat: add main structural layout" -m "Body message"
 
 ---
 
-## Branches
+### [Branches](#sections)
 
 ***Syntax:***
 ```bash
@@ -138,13 +140,13 @@ git switch -c feature-login # New
 ```
 
 ***Result:***
-> * main
+> main
 > 
 > Switched to a new branch 'feature-login'
 
 ---
 
-## Merge
+### [Merge](#sections)
 
 ***Syntax:***
 ```bash
@@ -164,7 +166,7 @@ git branch -d feature-login
 
 ---
 
-## Remote Repositories
+### [Remote Repositories](#sections)
 
 ***Syntax:***
 ```bash
@@ -200,9 +202,15 @@ git log --oneline --graph --all
 
 ---
 
-## Undoing Changes
+### [Undoing Changes](#sections)
 
-### Unstage a File
+> * [Unstage a File](#unstage-a-file)
+> * [Discard Local Changes](#discard-local-changes)
+> * [Soft Reset](#soft-reset-undo-last-commit-keep-code-changes)
+> * [Hard Reset](#hard-reset-delete-last-commit--destroy-code-changes)
+> * [Revert a Commit](#revert-a-commit)
+
+#### [Unstage a File](#undoing-changes)
 
 ***Syntax:***
 ```bash
@@ -215,9 +223,8 @@ git reset --staged config.json
 > Changes to be committed:
 > M config.json
 
-<br>
 
-### Discard Local Changes
+#### [Discard Local Changes](#undoing-changes)
 
 ***Syntax:***
 ```bash
@@ -226,9 +233,7 @@ git restore config.json
 ***Result:***
 > The uncommitted changes to config.json are discarded.
 
-<br>
-
-### Soft Reset (Undo Last Commit, Keep Code Changes)
+#### [Soft Reset (Undo Last Commit, Keep Code Changes)](#undoing-changes)
 
 Removes the previous commit entirely but leaves all modified files staged in your workspace.
 
@@ -241,7 +246,7 @@ git reset --soft HEAD~1
 
 <br>
 
-### Hard Reset (Delete Last Commit & Destroy Code Changes)
+#### [Hard Reset (Delete Last Commit & Destroy Code Changes)](#undoing-changes)
 Permanently erases the last commit **AND** throws away any code changes tracking along with it.
 
 > [!WARNING]
@@ -256,7 +261,7 @@ git reset --hard HEAD~1
 
 <br>
 
-### Revert a Commit
+#### [Revert a Commit](#undoing-changes)
 
 ***Syntax:***
 ```bash
@@ -287,7 +292,7 @@ git revert <commit>
 ```
 ---
 
-## Stashing
+### [Stashing](#sections)
 
 ***Syntax:***
 ```bash
@@ -304,3 +309,5 @@ git stash pop
 > On branch main
 > Switched to branch 'main'
 > Dropped refs/stash@{0} (e3b2a1c...)
+
+[:arrow_up: Return to Top](#git)
